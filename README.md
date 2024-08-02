@@ -1,5 +1,3 @@
-
-```markdown
 # 📚 DSA-Code
 
 Welcome to **DSA-Code**! This repository is your one-stop destination for mastering Data Structures and Algorithms (DSA) in both C++ and Python. Whether you're prepping for coding interviews or honing your problem-solving skills, we've got you covered.
