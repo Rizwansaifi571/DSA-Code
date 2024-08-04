@@ -56,3 +56,13 @@ int main() {
 
 
 
+
+// operators ; 
+    cout << 2/5 << endl;
+    cout << 2.0/5 << endl;
+
+    int z = 5;
+    int x = 11;
+    int z1 =  x==z;
+    cout << z1 << endl;
+}
