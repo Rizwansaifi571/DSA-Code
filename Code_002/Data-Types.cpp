@@ -43,4 +43,16 @@ int main() {
 
 
 
+// Type casting
+    int a1 = 'a';
+    int a11 = 'z';
+    cout << a1 << endl;
+    cout << a11 << endl;
+
+
+    char c1 = 97;
+    cout << c1 << endl;
+
+
+
 
