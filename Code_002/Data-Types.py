@@ -30,3 +30,10 @@ print(float(a1))
 print(bool(a1))
 
 
+# Operations
+print(2/5)
+print(2.0/5)
+
+z= 5
+x = 11
+print(z==x)
