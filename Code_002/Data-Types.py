@@ -23,3 +23,10 @@ d = 5464.2356
 print(d)
 
 
+# Type Casting
+a1 = 21351
+print(str(a1))
+print(float(a1))
+print(bool(a1))
+
+
