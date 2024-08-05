@@ -130,3 +130,65 @@ int main() {
 
 
 
+
+// Pattern Questions.
+
+/* 
+Question 1 :  
+ *  *  *  *  
+ *  *  *  *  
+ *  *  *  *
+ *  *  *  *   
+ */
+
+    int p;
+    int q;
+    cout << "Enter value of p : ";
+    cin >> p;
+    cout << "Enter value of q :";
+    cin >> q;
+    i = 1;
+
+
+    while (i <= p){
+        int j = 1;
+        while (j <= q){
+            cout << " * " ;
+            j +=1;
+        }
+        cout << endl;
+        i+=1;
+    }
+    
+
+
+
+
+
+/* 
+Question 2 :  
+ 1  1  1  
+ 2  2  2  
+ 3  3  3  
+ */
+
+
+    int p1;
+    cout << "Enter the value of p1 : ";
+    cin >> p1;
+    int q1;
+    cout << "Enter the value of q1 : ";
+    cin >> q1;
+    i = 1;
+
+    while (i <= p1){
+        int j = 1;
+        while (j <= q1){
+            cout << " " << i << " " ;
+            j +=1;
+        }
+        i +=1;
+        cout << endl;
+    }
+
+}
