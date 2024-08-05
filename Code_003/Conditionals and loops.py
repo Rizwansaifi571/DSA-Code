@@ -74,3 +74,43 @@ if (output == True):
 else : 
     print(f'{z} is not an prime number')
     
+
+
+
+# Pattern Questions.
+"""
+Question 1 :  
+ *  *  *  *  
+ *  *  *  *  
+ *  *  *  *
+ *  *  *  *   
+"""
+
+p = int(input("Enter the value of p : "))
+q = int(input("Enter the value of q : "))
+i = 1 
+while (i <= p):
+    j = 1
+    while(j <= q):
+        print("*", end=" ") # ensures that each asterisk is followed by a space and stays on the same line.
+        j += 1
+    print()
+    i += 1
+
+"""
+Question 2 :  
+ 1  1  1  
+ 2  2  2  
+ 3  3  3  
+ """
+r = int(input("Enter the value of r : "))
+s = int(input("Enter the value of s : "))
+i = 1 
+while (i <= r):
+    j = 1
+    while(j <= s):
+        print(i, end=" ") # ensures that each asterisk is followed by a space and stays on the same line.
+        j += 1
+    print()
+    i += 1
+
