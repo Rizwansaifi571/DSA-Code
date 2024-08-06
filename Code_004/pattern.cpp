@@ -33,3 +33,25 @@ int main() {
 
 
 
+
+/*Ques 2.
+4  3  2  1
+4  3  2  1 
+4  3  2  1
+4  3  2  1 
+*/ 
+    
+    cout << "Enter n : ";
+    cin >> n;
+
+    i = 1;
+
+    while (n>=i) {
+        int j = 1;
+        while (j<=n) {
+            cout << n-j+1 << " " ;
+            j += 1;
+        }
+        i += 1;
+        cout << endl;
+    }
