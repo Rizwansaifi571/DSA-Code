@@ -82,12 +82,12 @@ int main() {
 
 
 
-/*Ques 3.
+/*Ques 4.
 9  8  7
 6  5  4   
 3  2  1
 */ 
-    /*
+    
     cout << "Ener n : ";
     cin >> n;
     i = 1;
