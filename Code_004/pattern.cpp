@@ -127,13 +127,13 @@ int main() {
     }
 
 
-/*Ques 5.
+/*Ques 6.
 1 
 2 2
 3 3 3
 4 4 4 4
 */ 
-    /*
+    
     cout << "Enter the n : ";
     cin >> n;
     i = 1;
