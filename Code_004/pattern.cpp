@@ -174,13 +174,13 @@ int main() {
     
 
 
-/*Ques 7.
+/*Ques 8.
 1 
 2 3
 3 4 5
 4 5 6 7
 */ 
-    /*
+    
     cout << "Enter n : " ;
     cin >> n;
     i = 1;
