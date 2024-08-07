@@ -105,13 +105,13 @@ int main() {
     }
 
 
-/*Ques 4.
+/*Ques 5.
 * 
 * *
 * * *
 * * * *
 */ 
-    /*
+    
     cout << "Enter the n : ";
     cin >> n;
     i = 1;
