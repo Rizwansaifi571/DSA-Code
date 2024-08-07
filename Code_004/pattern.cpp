@@ -197,13 +197,13 @@ int main() {
 
     
     
-/*Ques 8.
+/*Ques 9.
 1 
 2 1
 3 2 1
 4 3 2 1
 */ 
-    /*
+    
     cout << "Enter n : " ;
     cin >> n;
     i = 1;
