@@ -219,12 +219,12 @@ int main() {
     }
 
 
-/*Ques 9.
+/*Ques 10.
 A A A
 B B B
 C C C
 */ 
-    /*
+    
     cout << "Enter n :";
     cin >> n;
     i = 1;
