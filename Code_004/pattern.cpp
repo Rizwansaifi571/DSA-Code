@@ -263,12 +263,12 @@ A B C
 
 
 
-/*Ques 11.
+/*Ques 12.
 A B C 
 D E F
 G H I
 */ 
-    /*
+    
     cout << "Enter n : ";
     cin >> n;
     i = 1;
@@ -286,7 +286,7 @@ G H I
     }
 
 
-/*Ques 12.
+/*Ques 13.
 A B C 
 B C D
 C D E
