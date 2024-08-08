@@ -327,13 +327,13 @@ C C C
     }
 
 
-/*Ques 14.
+/*Ques 15.
 A
 B C
 D  E  F
 G  H  I  J
 */ 
-    /*
+    
     cout << "Enter n : ";
     cin >> n;
     i = 1;
