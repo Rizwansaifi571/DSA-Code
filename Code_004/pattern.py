@@ -90,3 +90,81 @@ while (i <= n):
         j += 1
     i += 1
     print()
+
+
+"""Ques 6.
+1 
+2 2
+3 3 3
+4 4 4 4
+"""
+n= int(input("Enter n : "))
+i = 1
+
+while (i <= n):
+    j = 1
+    while (j <= i):
+        print(i, end =" ")
+        j += 1
+    i += 1
+    print()
+
+"""Ques 7.
+1 
+2 3
+4 5 6
+7 8 9 10
+"""
+
+n= int(input("Enter n : "))
+i = 1
+count = 1
+
+while (i <= n):
+    j = 1
+    while (j <= i):
+        print(count, end =" ")
+        j += 1
+        count += 1
+    i += 1
+    print()
+
+
+"""Ques 8.
+1 
+2 3
+3 4 5
+4 5 6 7
+"""
+
+n= int(input("Enter n : "))
+i = 1
+
+while (i <= n):
+    j = 1
+    while (j <= i):
+        print(i+j-1, end =" ")
+        j += 1
+    i += 1
+    print()
+
+
+"""Ques 9.
+1 
+2 1
+3 2 1
+4 3 2 1
+"""
+
+n = int(input("Enter n : "))
+i = 1
+
+while(i <= n):
+    j = 1
+    while(j <= i):
+        print(i-j+1, end = " ")
+        j += 1
+    i += 1
+    print()
+
+
