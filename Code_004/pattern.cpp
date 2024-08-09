@@ -421,14 +421,14 @@ A B C D
     }
 
 
-/*Ques 18.
+/*Ques 19.
 * * * * 
 * * *
 * *
 *
 */ 
 
-    /*
+    
     cout << "Enter n : ";
     cin >> n;
     i = 1;
