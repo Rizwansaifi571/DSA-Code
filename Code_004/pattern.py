@@ -282,3 +282,104 @@ while(i <= n):
 
 
 
+"""Ques 16.
+A 
+B C
+C D E
+D E F G
+"""
+n = int(input("Enter n : "))
+i = 1
+
+while(i <= n):
+    j = 1
+    while(j <= i):
+        print(chr(i+65+j-2), end = " ")
+        j += 1
+    i += 1
+    print()
+
+
+"""Ques 17.
+D 
+C D
+B C D
+A B C D
+"""
+
+n = int(input("Enter n : "))
+i = 1
+
+while(i <= n):
+    j = 1
+    while(j <= i):
+        print(chr(n+65-i+j-1), end = " ")
+        j += 1
+    i += 1
+    print()
+
+"""Ques 18.
+      *
+    * *
+  * * *
+* * * *
+"""
+
+n = int(input("Enter n : "))
+i = 1
+
+while(i <= n):
+    space = 1
+    while(space <= n-i):
+        print(" ", end = "")
+        space += 1
+    j = 1
+    while(j <= i):
+        print("*", end = "")
+        j += 1
+    i += 1
+    print()
+
+
+"""Ques 19.
+* * * * 
+* * *
+* *
+*
+"""
+
+n = int(input("Enter n : "))
+i = 1
+
+while(i <= n):
+    j = 1
+    while(j <= n-i+1):
+        print("*", end = " ")
+        j += 1
+    i += 1
+    print()
+
+
+"""Ques 20.
+* * * * 
+  * * *
+    * *
+      *
+"""
+n = int(input("Enter n : "))
+i = 1
+
+while(i <= n):
+    space = 1
+    while(space <= i-1):
+        print(" ", end = "")
+        space += 1
+    j = 1
+    while(j <= n-i+1):
+        print("*", end = "")
+        j += 1
+    i += 1
+    print()
+
+
+
