@@ -337,7 +337,7 @@ G  H  I  J
     cout << "Enter n : ";
     cin >> n;
     i = 1;
-    char alph = 'A';
+    alph = 'A';
 
     while (i <= n) {
         int j = 1;
@@ -537,7 +537,7 @@ A B C D
     cout << "Enter n : ";
     cin >> n;
     i = 1;
-    int count = 1;
+    count = 1;
 
     while(i <= n) {
         int space = 1;
@@ -574,7 +574,7 @@ A B C D
             space += 1;
         }
         int j = 1;
-        int count = 1;
+        count = 1;
         while (j <= i) {
             cout << count << " ";
             count += 1;
