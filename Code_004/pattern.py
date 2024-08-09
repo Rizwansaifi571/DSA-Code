@@ -168,3 +168,117 @@ while(i <= n):
     print()
 
 
+
+"""Ques 10.
+A A A
+B B B
+C C C
+"""
+n = int(input("Enter n : "))
+i = 1
+
+while(i <= n):
+    j = 1
+    while(j <= n):
+        print(chr(i+65-1), end = " ")
+        j += 1
+    i += 1
+    print()
+
+
+"""Ques 11.
+A B C 
+A B C
+A B C
+"""
+
+n = int(input("Enter n : "))
+i = 1
+
+while(i <= n):
+    j = 1
+    while(j <= n):
+        print(chr(j+65-1), end = " ")
+        j += 1
+    i += 1
+    print()
+
+
+
+"""Ques 12.
+A B C 
+D E F
+G H I
+"""
+
+n = int(input("Enter n : "))
+i = 1
+count = 65
+
+while(i <= n):
+    j = 1
+    while(j <= n):
+        print(chr(count), end = " ")
+        count += 1
+        j += 1
+    i += 1
+    print()
+
+
+"""Ques 13.
+A B C 
+B C D
+C D E
+"""
+
+n = int(input("Enter n : "))
+i = 1
+
+while(i <= n):
+    j = 1
+    while(j <= n):
+        print(chr(i+j+65-2), end = " ")
+        j += 1
+    i += 1
+    print()
+
+
+"""Ques 14.
+A
+B B
+C C C
+"""
+n = int(input("Enter n : "))
+i = 1
+
+while(i <= n):
+    j = 1
+    while(j <= i):
+        print(chr(i+65-1), end = " ")
+        j += 1
+    i += 1
+    print()
+
+
+"""Ques 15.
+A
+B C
+D  E  F
+G  H  I  J
+"""
+
+n = int(input("Enter n : "))
+i = 1
+count = 65
+
+while(i <= n):
+    j = 1
+    while(j <= i):
+        print(chr(count), end = " ")
+        count += 1
+        j += 1
+    i += 1
+    print()
+
+
+
