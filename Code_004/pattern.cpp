@@ -372,13 +372,13 @@ D E F G
     }
 
 
-/*Ques 16.
+/*Ques 17.
 D 
 C D
 B C D
 A B C D
 */ 
-    /*
+    
     cout << "Enter n : ";
     cin >> n;
     i = 1;
