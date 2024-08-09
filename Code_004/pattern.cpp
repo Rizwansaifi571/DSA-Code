@@ -394,13 +394,13 @@ A B C D
     }
 
 
-/*Ques 17.
+/*Ques 18.
       *
     * *
   * * *
 * * * *
 */ 
-    /*
+    
     cout << "Enter n : ";
     cin >> n;
     i = 1;
