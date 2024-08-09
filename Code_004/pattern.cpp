@@ -350,13 +350,13 @@ G  H  I  J
         cout << endl;
     }
 
-/*Ques 15.
+/*Ques 16.
 A 
 B C
 C D E
 D E F G
 */ 
-    /*
+    
     cout << "Enter n : ";
     cin >> n;
     i = 1;
