@@ -382,4 +382,127 @@ while(i <= n):
     print()
 
 
+"""Ques 21.
+1111
+ 222
+  33
+   4
+"""
 
+n = int(input("Enter n : "))
+i = 1
+
+while(i <= n):
+    space = 1
+    while(space <= i-1):
+        print(" ", end = "")
+        space += 1
+    j = 1
+    while(j <= n-i+1):
+        print(i, end = "")
+        j += 1
+    i += 1
+    print()
+
+
+"""Ques 21.
+   1
+  22
+ 333
+4444
+"""
+
+n = int(input("Enter n : "))
+i = 1
+
+while(i <= n):
+    space = 1
+    while(space <= n-i):
+        print(" ", end = "")
+        space += 1
+    j = 1
+    while(j <= i):
+        print(i, end = "")
+        j += 1
+    i += 1
+    print()
+
+
+"""Ques 23.      
+      1 
+    2 3 
+  4 5 6 
+7 8 9 10
+"""
+
+n = int(input("Enter n : "))
+i = 1
+count = 1
+
+while(i <= n):
+    space = 1
+    while(space <= n-i):
+        print(" ", end = " ")
+        space += 1
+    j = 1
+    while(j <= i):
+        print(count, end = " ")
+        count += 1
+        j += 1
+    i += 1
+    print()
+
+
+"""Ques 24.
+      1 
+    1 2 1
+  1 2 3 2 1
+1 2 3 4 3 2 1
+"""
+
+n = int(input("Enter n : "))
+i = 1
+
+while(i <= n):
+    space = 1
+    while(space <= n-i):
+        print(" ", end = " ")
+        space += 1 
+    j = 1
+    while (j <= i):
+        print(j, end =" ")
+        j += 1
+    j = 1
+    while (j <= i-1):
+        print(i-j, end =" ")
+        j += 1
+    i += 1
+    print()
+
+
+"""Ques 25.
+1 2 3 4 5 5 4 3 2 1 
+1 2 3 4 * * 4 3 2 1
+1 2 3 * * * * 3 2 1
+1 2 * * * * * * 2 1
+1 * * * * * * * * 1
+"""
+
+n = int(input("Enter n : "))
+i = 1
+
+while(i <= n):
+    j = 1
+    while (j <= n-i+1):
+        print(j, end =" ")
+        j += 1
+    j = 1
+    while (j <= (i-1)*2):
+        print("*", end =" ")
+        j += 1
+    j = n-i+1
+    while (j >= 1):
+        print(j, end =" ")
+        j -= 1
+    i += 1
+    print()
