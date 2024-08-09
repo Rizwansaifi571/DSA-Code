@@ -500,13 +500,13 @@ A B C D
     }
 
 
-/*Ques 21.
+/*Ques 22.
    1
   22
  333
 4444
 */ 
-    /*
+    
     cout << "Enter n : ";
     cin >> n;
     i = 1;
@@ -527,13 +527,13 @@ A B C D
     }
 
 
-/*Ques 22.
+/*Ques 23.
       1 
     2 3 
   4 5 6 
 7 8 9 10
 */ 
-    /*
+    
     cout << "Enter n : ";
     cin >> n;
     i = 1;
