@@ -24,7 +24,6 @@ int main() {
     cout << "++a : " << ++a << endl;
     cout << "a-- : " << a-- << endl;
     cout << "--a : " << --a << endl;
-*/
 
 
 // For loop
@@ -54,8 +53,34 @@ int main() {
     }
 
 
+// Ques: Print sum for 1 to n.
+    cout << "Enter n : ";
+    cin >> n;
+    int sum = 0;
+    for (int i = 1; n >= i; i++) {
+        sum += i; 
+    }
+    cout << "Sum for 1 to n : " << sum << endl;
 
-}
+
+*/
+
+// Ques: Print fibonacci series.
+    int n;
+    cout << "Enter n : ";
+    cin >> n;
+    
+    int a = 0;  
+    int b = 1;
+    cout << a << " " << b;
+
+    for (int i = 1; n >= i; i++) {
+        int sum  = a + b;
+        cout << " " << sum; 
+        a = b;
+        b = sum; 
+    }
+}   
 
 
 
