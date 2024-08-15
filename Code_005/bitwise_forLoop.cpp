@@ -19,6 +19,11 @@ int main() {
     cout << "a >> 1 : " << (a>>1) << endl;
     cout << "a >> 2 : " << (a>>2) << endl;
 
+// Increment & Decrement.
+    cout << "a++ : " << a++ << endl;
+    cout << "++a : " << ++a << endl;
+    cout << "a-- : " << a-- << endl;
+    cout << "--a : " << --a << endl;
 
 }
 
