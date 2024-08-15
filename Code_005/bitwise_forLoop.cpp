@@ -6,7 +6,7 @@
 #include <iostream>
 using namespace std;
 int main() {
-/*
+
     int a = 4;
     int b = 6;
 
@@ -63,15 +63,13 @@ int main() {
     cout << "Sum for 1 to n : " << sum << endl;
 
 
-*/
 
 // Ques: Print fibonacci series.
-    int n;
     cout << "Enter n : ";
     cin >> n;
     
-    int a = 0;  
-    int b = 1;
+    a = 0;  
+    b = 1;
     cout << a << " " << b;
 
     for (int i = 1; n >= i; i++) {
@@ -80,8 +78,44 @@ int main() {
         a = b;
         b = sum; 
     }
-}   
+    cout << endl;
 
+
+
+
+// Ques : Print number is prime or not.
+    cout << "Enter n : ";
+    cin >> n;
+    bool check = 1;
+
+    for (int i = 2; n > i; i++) {
+        if (n % i == 0) {
+            cout << n << " is not a prime number." << endl;
+            check = 0;
+            break;
+        }
+        else {
+            check = 1;
+        }
+    }
+
+    if (check == 1){
+        cout << n << " is an prime number." << endl; 
+    }
+
+
+// Ques : Give example of continue stament.
+
+    for (int i = 0; i < 5; i++) {
+        cout << "Hi" << endl;
+        cout << "Hey" << endl;
+        continue;
+
+        cout << "Reply" << endl;
+    }
+
+
+}   
 
 
 
