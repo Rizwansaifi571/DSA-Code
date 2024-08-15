@@ -5,8 +5,8 @@
 
 #include <iostream>
 using namespace std;
-
 int main() {
+/*
     int a = 4;
     int b = 6;
 
@@ -24,7 +24,39 @@ int main() {
     cout << "++a : " << ++a << endl;
     cout << "a-- : " << a-- << endl;
     cout << "--a : " << --a << endl;
+*/
+
+
+// For loop
+
+//Ques. Printing number for 1 to n.
+    int n;
+    cout << "Enter tha value of n : ";
+    cin >> n;
+
+    for (int i = 1; n >=i; i++) {
+        cout << i << endl;
+    }
+
+// Same question with different approach.
+    cout << "Enter tha value of n : ";
+    cin >> n;
+
+    int i = 1;
+    for (; ;){
+        if (n >= i) {
+            cout << i << endl;
+            i++;
+        }
+        else {
+            break;
+        }
+    }
+
+
 
 }
+
+
 
 
