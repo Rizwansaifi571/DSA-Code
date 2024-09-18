@@ -25,6 +25,13 @@ int ncr (int n, int r) {
 
 }
 
+
+// Pass by value 
+int update (int a) {
+    int ans = a*a;
+    return ans;
+}
+
 int main() {
     int x;
     cout << "Enter Number For Taking Square : ";
@@ -37,4 +44,11 @@ int main() {
     cin >> n >> r ;
     cout << "Your " << n << "C" << r << " value is : "<<endl;
     cout << ncr(n, r) << endl;
+
+
+
+    int a = 14;
+    update(a);
+    cout << (a) << endl;
 }
+
