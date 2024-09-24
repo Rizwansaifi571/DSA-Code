@@ -19,8 +19,7 @@ void SwapAlternate2 (int arr[], int size) {
     for(int i = 0; i < size; i += 2) {
         if (i < size-1) {
             int first = arr[i];
-            int second = arr[i+1];
-            arr[i] = second;
+            arr[i] = arr[i+1];
             arr[i+1] = first;
             
         }    
