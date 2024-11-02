@@ -113,10 +113,9 @@ int findposition(int arr[], int n, int k) {
 
 
 int main() {
-    int arr1[5] = {12, 15, 18, 2, 4};
-    int arr[5] = {7, 8, 1, 3, 5};
+    int arr[5] = {12, 15, 18, 2, 4};
     
-    int index = findposition(arr, 5, 7);
+    int index = findposition(arr, 5, 2);
     cout << "Index of " << "2" << " is: " << index << endl;
     return 0;
 }
