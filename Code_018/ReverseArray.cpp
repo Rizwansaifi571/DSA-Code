@@ -53,3 +53,32 @@ void reverseArray(vector<int> &arr , int m) {
     // Write your code here       	
 }
 */
+
+#include <iostream>
+using namespace std;
+#include<vector>
+
+void reverseArray(vector<int> &arr , int m) {
+    int start = m + 1;
+    int end = arr.size() - 1;
+    while(start < end) {
+        swap(arr[start], arr[end]);
+        start++;
+        end--;
+    }
+}
+
+void printArray(vector<int> &arr) {
+    for (int i = 0; i < arr.size(); i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
+int main() {
+
+    vector<int> arr = {1, 2, 3, 4, 5, 6};
+    reverseArray(arr, 3);
+    printArray(arr);
+    return 0;
+}
