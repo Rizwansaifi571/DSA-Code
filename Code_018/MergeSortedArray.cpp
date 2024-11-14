@@ -86,6 +86,7 @@ int main() {
     merge(nums1, 3, nums2, 3);
     printArray(nums1);
     return 0;
+    
 }
 
 
