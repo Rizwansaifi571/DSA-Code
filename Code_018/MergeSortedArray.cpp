@@ -48,24 +48,33 @@ link : https://leetcode.com/problems/merge-sorted-array/description/
 using namespace std;
 
 void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
-    for (int i = 0; i < n; i++) {
-        nums1.push_back(nums2[i]);
-    }
-    int size = nums1.size();
-    for (int i = 1; i < size; i++) {
-        int temp = nums1[i];
-        int j = i - 1;
-        while(j >= 0 && nums1[j] > temp) {
-            nums1[j+1] = nums1[j];
-            j--;
+    int i = m - 1;
+    int j = n - 1;
+    int k = m + n -1;
+    
+    while (i >= 0 && j >= 0) {
+        if (nums1[i] > nums2[j]) {
+            nums1[k--] = nums1[i--];
+        } else {
+            nums1[k--] = nums2[j--];
         }
-        nums1[j+1] = temp;
+    }
+
+/*
+The while loop that handles the case for remaining elements
+in nums1 is unnecessary because those 
+elements are already in the correct position in nums1
+*/
+
+    while(j >= 0) {                                 
+        nums1[k--] = nums2[j--];
+
     }
 }
 
-void printArray(vector<int>& nums1) {
-    for(int i = 0; i < nums1.size(); i++) {
-        cout << nums1[i] << " ";
+void printArray(vector<int>& nums3) {
+    for(int i = 0; i < nums3.size(); i++) {
+        cout << nums3[i] << " ";
     }
     cout << endl;
 }
@@ -73,7 +82,10 @@ void printArray(vector<int>& nums1) {
 int main() {
     vector<int> nums1 = {1, 2, 3, 0, 0, 0};
     vector<int> nums2 = {2, 5, 6};
+
     merge(nums1, 3, nums2, 3);
     printArray(nums1);
     return 0;
 }
+
+
