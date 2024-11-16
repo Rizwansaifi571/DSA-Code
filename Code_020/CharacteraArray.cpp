@@ -20,7 +20,7 @@ void reverse(char name[]) {
     while(name[end] != '\0') {
         end++;
     }
-    while(start < end) {
+    while(start < end-1) {
         swap(name[start], name[end-1]);
         start++;
         end--;
