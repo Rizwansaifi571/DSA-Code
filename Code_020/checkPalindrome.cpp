@@ -1,8 +1,16 @@
 // check palindrome
 
 #include <iostream>
-#include <cctype>
 using namespace std;
+
+char toLowerCase(char ch) {
+    if(ch >= 'a' && ch <= 'z') {
+        return ch;
+    } else {
+        char temp = ch - 'A' + 'a';
+        return temp;
+    }
+}
 
 void checkPalindrome(char s[]) {
     int start = 0;
@@ -12,7 +20,7 @@ void checkPalindrome(char s[]) {
     }
     
     while(start < end - 1) {
-        if (tolower(s[start]) == tolower(s[end - 1])) {
+        if (toLowerCase(s[start]) == toLowerCase(s[end - 1])) {
             start++;
             end--;
         } else {
