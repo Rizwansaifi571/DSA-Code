@@ -48,7 +48,7 @@ char MaxOccuring(string s) {
         } else {
             number = ch - 'A';
         }
-        arr[number]++;
+        arr[number]++;   // number index hai aur humne starting mein sbko zero se initilize kra hen every time occuring pr increment kr rhe hai
     }
 
     int maxi = -1, ans = 0;
