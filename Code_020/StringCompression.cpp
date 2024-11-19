@@ -66,7 +66,7 @@ int stringCompression(vector<char>& chars) {
         // If the count of consecutive characters is more than 1, write the count
         int count = j - i;
         if (count > 1) {
-            string cnt = to_string(count);
+            string cnt = to_string(count);   // convert numeric to string
             for (char ch : cnt) {
                 chars[ansIndex++] = ch;
             }
