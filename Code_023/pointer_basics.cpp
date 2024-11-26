@@ -18,5 +18,8 @@ int main() {
     // size of pointer
     cout << sizeof(ptr) << endl;   // always return 8 for 64 bit and 4 for 32 bit because address with having specific length and storage
     
+    // increment
+    cout << ++(*ptr) << endl;   // increment pointer value
+    cout << ++(ptr) << endl;   // move to next value of address
 
 }
