@@ -43,7 +43,7 @@ int main() {
     
     // cout << "before " << *ptr << endl;
     // update2(ptr);
-    // cout << "After " << *ptr << endl;
+    cout << "After " << *ptr << endl;
 
     int arr[6] = {1, 2, 3, 4, 5, 6};
     cout << getSum(arr + 3, 3) << endl;
