@@ -41,8 +41,8 @@ int main() {
     // update(ptr);
     // cout << "After " << ptr << endl;
     
-    // cout << "before " << *ptr << endl;
-    // update2(ptr);
+    cout << "before " << *ptr << endl;
+    update2(ptr);
     cout << "After " << *ptr << endl;
 
     int arr[6] = {1, 2, 3, 4, 5, 6};
