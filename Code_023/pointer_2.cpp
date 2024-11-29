@@ -31,8 +31,8 @@ int getSum(int *arr, int n) {
 }
 
 int main() {
-    // int value = 5;
-    // int *ptr = &value;
+    int value = 5;
+    int *ptr = &value;
     
     // print(ptr);
 
