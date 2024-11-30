@@ -34,7 +34,7 @@ int main() {
     int value = 5;
     int *ptr = &value;
     
-    // print(ptr);
+    print(ptr);
 
 
     // cout << "before " << ptr << endl;
