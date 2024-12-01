@@ -37,9 +37,9 @@ int main() {
     print(ptr);
 
 
-    // cout << "before " << ptr << endl;
-    // update(ptr);
-    // cout << "After " << ptr << endl;
+    cout << "before " << ptr << endl;
+    update(ptr);
+    cout << "After " << ptr << endl;
     
     cout << "before " << *ptr << endl;
     update2(ptr);
