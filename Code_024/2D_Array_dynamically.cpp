@@ -40,7 +40,7 @@ int main() {
 
     // releasing Memory 
     for(int i = 0; i < row; i++) {
-        delete arr[i];
+        delete[] arr[i];
     }
 
     delete []arr;    // erase main memory
