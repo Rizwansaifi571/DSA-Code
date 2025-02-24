@@ -5,6 +5,7 @@
 using namespace std;
 
 int partition(vector<int>& nums, int start, int end) {
+    
     int pivot = nums[start];
     int count = 0;
     for(int i = start + 1; i <=end; i++) {
@@ -25,11 +26,17 @@ int partition(vector<int>& nums, int start, int end) {
 }
 
 void quickSort(vector<int>& nums, int start, int end) {
+    
+    // base case
     if(start >= end) return;
 
+    // take index of partition element
     int p = partition(nums, start, end);
 
+    // check left side
     quickSort(nums, start, p - 1);
+
+    // check right side
     quickSort(nums, p + 1, end);
 }
 
