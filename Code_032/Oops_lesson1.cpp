@@ -29,13 +29,13 @@ public :
     }
 
     // creating parameterrize constructor
-    Hero(int health, char level, char name[]) {
-        cout << "parameterized constructor" << endl;
-        this -> name = new char[100];
-        this -> health = health;
-        this -> level = level;
-        strcpy(this -> name, name);
-    }
+    // Hero(int health, char level, char name[]) {
+    //     cout << "parameterized constructor" << endl;
+    //     this -> name = new char[100];
+    //     this -> health = health;
+    //     this -> level = level;
+    //     strcpy(this -> name, name);
+    // }
 
     // Hero(Hero& temp) {
     //     char *ch = new char[strlen(temp.name) + 1];
@@ -46,13 +46,13 @@ public :
     // }
 
 
-    void print() {
-        cout << endl << "[name : " << name << ", ";
-        cout << "Health : " << health << ", ";
-        cout << "Level : " << level << "] ";
-        cout << endl << endl;
+    // void print() {
+    //     cout << endl << "[name : " << name << ", ";
+    //     cout << "Health : " << health << ", ";
+    //     cout << "Level : " << level << "] ";
+    //     cout << endl << endl;
 
-    }
+    // }
 
 
 
@@ -61,6 +61,11 @@ public :
     //     this -> health = temp.health;
     //     this -> level = temp.level;
     // }
+
+    // staic method 
+    static int random() {
+        return time;
+    }
 
 };
 
@@ -115,16 +120,16 @@ int main() {
     // h1.print();
     // h2.print();
 
-    cout << Hero :: time << endl;
+    cout << Hero :: random() << endl;
 
     
-    Hero a;
-    cout << a.time << endl;
+    // Hero a;
+    // cout << a.time << endl;
     
-    Hero b;
-    b.time = 20;
-    cout << a.time << endl;
-    cout << b.time << endl;
+    // Hero b;
+    // b.time = 20;
+    // cout << a.time << endl;
+    // cout << b.time << endl;
 
 
     
