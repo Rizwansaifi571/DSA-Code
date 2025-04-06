@@ -32,6 +32,15 @@ public :
         strcpy(this -> name, name);
     }
 
+    Hero(Hero& temp) {
+        char *ch = new char[strlen(temp.name) + 1];
+        strcpy(ch, temp.name);
+        this -> name = ch;
+        this -> health = health;
+        this -> level = level;
+    }
+
+
     void print() {
         cout << endl << "[name : " << name << ", ";
         cout << "Health : " << health << ", ";
@@ -84,9 +93,6 @@ int main() {
     cout << "After Update" << endl;
     h1.print();
     h2.print();
-
-
-
 
     return 0;
 }
