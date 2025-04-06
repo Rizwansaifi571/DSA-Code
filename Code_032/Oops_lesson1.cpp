@@ -36,8 +36,8 @@ public :
         char *ch = new char[strlen(temp.name) + 1];
         strcpy(ch, temp.name);
         this -> name = ch;
-        this -> health = health;
-        this -> level = level;
+        this -> health = temp.health;
+        this -> level = temp.level;
     }
 
 
