@@ -32,13 +32,13 @@ public :
         strcpy(this -> name, name);
     }
 
-    Hero(Hero& temp) {
-        char *ch = new char[strlen(temp.name) + 1];
-        strcpy(ch, temp.name);
-        this -> name = ch;
-        this -> health = temp.health;
-        this -> level = temp.level;
-    }
+    // Hero(Hero& temp) {
+    //     char *ch = new char[strlen(temp.name) + 1];
+    //     strcpy(ch, temp.name);
+    //     this -> name = ch;
+    //     this -> health = temp.health;
+    //     this -> level = temp.level;
+    // }
 
 
     void print() {
@@ -80,17 +80,31 @@ int main() {
     // cout << obj_2.level << endl;
 
 
-    char name[] = "Rizwan";
+    // char name[] = "Rizwan";
     
-    Hero h1(70, 'S', name);
+    // Hero h1(70, 'S', name);
     
-    Hero h2(h1);
+    // Hero h2(h1);
     
+    // h1.print();
+    // h2.print();
+    
+    // h1.name[0] = 'B';
+    // cout << "After Update" << endl;
+    // h1.print();
+    // h2.print();
+    
+
+
+    char name1[] = "Rizwan";
+    char name2[] = "Saifi";
+    
+    Hero h1(70, 'S', name1);
+    Hero h2(100, 'X', name2);
     h1.print();
     h2.print();
-
-    h1.name[0] = 'B';
-    cout << "After Update" << endl;
+    
+    h1 = h2;
     h1.print();
     h2.print();
 
