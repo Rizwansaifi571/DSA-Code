@@ -22,6 +22,11 @@ public :
     int health;
     char level;
     char *name;
+    static int time;
+
+    Hero() {
+        cout << "default constructor" << endl;
+    }
 
     // creating parameterrize constructor
     Hero(int health, char level, char name[]) {
@@ -58,6 +63,8 @@ public :
     // }
 
 };
+
+int Hero :: time = 5;
 
 int main() {
 
@@ -96,17 +103,31 @@ int main() {
     
 
 
-    char name1[] = "Rizwan";
-    char name2[] = "Saifi";
+    // char name1[] = "Rizwan";
+    // char name2[] = "Saifi";
     
-    Hero h1(70, 'S', name1);
-    Hero h2(100, 'X', name2);
-    h1.print();
-    h2.print();
+    // Hero h1(70, 'S', name1);
+    // Hero h2(100, 'X', name2);
+    // h1.print();
+    // h2.print();
     
-    h1 = h2;
-    h1.print();
-    h2.print();
+    // h1 = h2;
+    // h1.print();
+    // h2.print();
+
+    cout << Hero :: time << endl;
+
+    
+    Hero a;
+    cout << a.time << endl;
+    
+    Hero b;
+    b.time = 20;
+    cout << a.time << endl;
+    cout << b.time << endl;
+
+
+    
 
     return 0;
 }
