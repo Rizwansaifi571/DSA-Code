@@ -34,6 +34,5 @@ int main() {
     object1.setweight(67);
     cout << object1.weight << endl;
     object1.sleep();
-
     return 0;
 }
