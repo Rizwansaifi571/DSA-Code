@@ -64,6 +64,7 @@ void print(Node* &head) {
 int main() {
     // dyanmically
     Node* node1 = new Node(1);
+    
     // cout << node1 -> data << endl;
     // cout << node1 -> next << endl;
 
