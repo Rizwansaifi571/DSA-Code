@@ -52,6 +52,34 @@ void insertAtPosition(int pos, int data, Node* &head, Node* & tail) {
     temp -> next = nodetoInsert;
 }
 
+// ======= another way =====================
+
+void insertAtPos(Node* &head, Node* &tail,  int data, int pos) {
+    Node* temp = new Node(data);
+
+    if(pos <= 1) {
+        temp->next = head;
+        head = temp;
+        return;
+    }
+
+    Node* curr = head;
+    while(pos > 2 && curr->next != nullptr) {
+        pos--;
+        curr = curr->next;
+    }
+
+    if(curr->next == nullptr) {
+        tail->next = temp;
+        tail = temp;
+        return;
+    }
+
+    temp->next = curr->next;
+    curr->next = temp;
+}
+
+
 void print(Node* &head) {
     Node* temp = head;
     while(temp != NULL) {
