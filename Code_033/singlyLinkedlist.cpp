@@ -11,6 +11,17 @@ public:
         this -> data = data;
         this -> next = nullptr;
     }
+
+    // destructor
+    ~Node() {
+        int value = this->data;
+        // memory free
+        if(this->next != nullptr) {
+            delete next;
+            this->next = nullptr;
+        }
+        cout << " memory is free for node with data " << value << endl;
+    }
 };
 
 void insertAtHead(Node* &head, int data) {
@@ -80,6 +91,36 @@ void insertAtPos(Node* &head, Node* &tail,  int data, int pos) {
 }
 
 
+
+// --------------------- Deletion ------------------------
+
+void deleteNode(int pos, Node* &head) {
+    //deleting first node
+    if(pos == 1) {
+        Node* temp = head;     // taki mein present ki heap memory ko delete krdu
+        head = head->next;
+        // memory free start node
+        temp->next = nullptr;
+        delete temp;
+    }
+    else {
+        // deleting any middle and last node
+        Node *curr = head;
+        Node * prev = nullptr;
+
+        int cnt = 1;
+        while(cnt < pos) {
+            prev = curr;
+            curr = curr->next;
+            cnt++;
+        }
+
+        prev->next = curr->next;
+        curr->next = nullptr;
+        delete curr;
+    }
+}
+
 void print(Node* &head) {
     Node* temp = head;
     while(temp != NULL) {
@@ -115,6 +156,8 @@ int main() {
     insertAtTail(tail, 5);
     insertAtPosition(1, 6, head, tail);
     insertAtPosition(5, 7, head, tail);
+    print(head);
+    deleteNode(1, head);
     print(head);
     cout << "head " << head -> data << endl;
     cout << "tail " << tail -> data << endl;
