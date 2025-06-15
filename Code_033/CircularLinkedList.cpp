@@ -56,7 +56,7 @@ void deleteNode(Node* &tail, int element) {
     if(curr == prev) {
         tail = NULL;
     }
-    else if(tail = curr) {
+    else if(tail == curr) {
         tail = prev;
     }
     curr->next = NULL;
