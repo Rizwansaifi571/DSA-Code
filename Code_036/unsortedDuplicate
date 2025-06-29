@@ -1,0 +1,78 @@
+
+#include <iostream>
+#include <map>
+using namespace std;
+
+class Node {
+public:
+    int data;
+    Node* next;
+
+    // constructor
+    Node(int data) {
+        this -> data = data;
+        this -> next = nullptr;
+    }
+
+};
+
+void insertAtHead(Node* &head, int data) {
+    // create new node
+    Node* temp = new Node(data);
+    temp -> next = head;
+    head = temp;
+}
+
+
+void print(Node* &head) {
+    Node* temp = head;
+    while(temp != NULL) {
+        cout << temp -> data << " -> ";
+        temp = temp -> next;
+    }
+    cout << endl;
+}
+
+
+void RemoveUnsortedDuplicates(Node* &head) {
+    map<int, bool>mymap;
+
+    Node* curr = head;
+    Node* prev =  NULL;
+    
+    while(curr != nullptr) {
+        if(mymap[curr->data]) {
+            prev->next = curr->next;
+            delete curr;
+            curr = prev->next;
+        }
+        else {
+            mymap[curr->data] = true;
+            prev = curr;
+            curr = curr->next;
+        }
+    }
+}
+
+int main() {
+    Node* node1 = new Node(1);
+    
+
+    // head creation
+    Node* head = node1;
+
+
+    insertAtHead(head, 2);
+    insertAtHead(head, 2);
+    insertAtHead(head, 2);
+    insertAtHead(head, 3);
+    insertAtHead(head, 3);
+    insertAtHead(head, 3);
+    insertAtHead(head, 3);
+    insertAtHead(head, 4);
+    print(head);
+    RemoveUnsortedDuplicates(head);
+    print(head);
+
+    return 0;
+}
