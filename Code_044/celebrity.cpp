@@ -1,3 +1,5 @@
+// link : https://www.geeksforgeeks.org/problems/the-celebrity-problem/1
+
 #include <iostream>
 #include <stack>
 #include <vector>
@@ -29,26 +31,21 @@ int celebrity(vector<vector<int> >& mat) {
     }
     int candidate = s.top();
 
-    bool rowcheck = true;
     for(int i = 0; i < mat.size(); i++) {
         if(i != candidate && mat[candidate][i] != 0) {
-            rowcheck = false;
-            break;
+            return -1;
         }
     }
 
 
-    bool colCheck = true;
     for(int i = 0; i < mat.size(); i++) {
         if(i != candidate && mat[i][candidate] != 1) {
-            colCheck = false;
-            break;
+            return -1;
         }
     }
 
 
-    if(rowcheck == true && colCheck == true) return candidate;
-    else return -1;
+    return candidate;
 }
 
 int main() {
