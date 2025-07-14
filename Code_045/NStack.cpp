@@ -1,3 +1,5 @@
+// link : https://www.naukri.com/code360/problems/n-stacks-in-an-array_1164271
+
 #include <iostream>
 #include <stack>
 using namespace std;
