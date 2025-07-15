@@ -1,3 +1,5 @@
+// link : https://www.naukri.com/code360/problems/deque_1170059
+
 #include <iostream>
 using namespace std;
 
