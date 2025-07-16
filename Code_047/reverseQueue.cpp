@@ -1,3 +1,5 @@
+// link : https://www.geeksforgeeks.org/problems/queue-reversal/1
+
 #include <iostream>
 #include <stack>
 #include <queue>
