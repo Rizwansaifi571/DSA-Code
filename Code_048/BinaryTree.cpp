@@ -16,6 +16,8 @@ public:
     }
 };
 
+
+
 node* buildTree(node* &root) {
     int data;
     cout << "Enter the data : ";
@@ -33,6 +35,8 @@ node* buildTree(node* &root) {
 
     return root;
 }
+
+
 
 void levelOrderTraversal(node* root) {
     queue<node*> q;
@@ -62,6 +66,8 @@ void levelOrderTraversal(node* root) {
         }
     }
 }
+
+
 
 void ReverselevelOrderTraversal(node* root) {
     queue<node*> q;
@@ -100,6 +106,7 @@ void ReverselevelOrderTraversal(node* root) {
         }
     }
 }
+
 
 
 void buildFromLevelOrder(node* &root) {
